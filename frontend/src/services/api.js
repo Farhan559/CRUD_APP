@@ -6,7 +6,7 @@ export const getAllItems = async()=>{
     return response.data;
 }
 export const createItem = async(item)=>{
-    const response = await axios.post(API_URL);
+    const response = await axios.post(API_URL,item);
     return response.data;
 
 }
